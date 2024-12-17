@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minik Kus Game</title>
+    <link rel="icon" href="görsel/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kullanıcı Adı Giriş Ekranı -->
+    <div id="usernameScreen">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" placeholder="Kullanıcı adınızı girin" />
+        <button onclick="startGame()">Başla</button>
+    </div>
+
+    <!-- Sol üst köşede home butonu, görsel ikon ekledik -->
+    <button class="home-button" id="homeButton">
+        <img src="görsel/home.png" alt="Home" class="home-icon">
+    </button>
+
+    <!-- Oyun Ekranı -->
+    <div id="game-container" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+        <button id="restartButton" onclick="restartGame()">YENIDEN BASLAT</button>
+    </div>
+
+    <audio id="gameMusic" loop>
+        <source src="görsel/Download.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Ziyaretçi sayısı kutusu -->
+    <div id="visitorCount">
+        Ziyaret Etme Sayınız: <span id="counter">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

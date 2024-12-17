@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('görsel/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#game-container {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(112, 197, 206, 0.8);
+    border: 5px solid rgba(27, 27, 27, 0.318);
+    border-radius: 25px;
+}
+
+canvas {
+    display: block;
+}
+
+#restartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 10px 20px;
+    display: none;
+    border-radius: 15px;
+    background-color: rgb(251, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.584);
+    color: rgba(0, 0, 0, 0.763);
+    font-weight: bold;
+}
+
+#visitorCount {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visitorCount span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Kullanıcı adı giriş ekranı */
+#usernameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(179, 179, 179, 0.851);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+#usernameScreen input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #7b7b7b;
+    width: 200px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#usernameScreen input:focus {
+    border-color: #ffe013;
+    outline: none;
+}
+
+#usernameScreen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fff700;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#usernameScreen button:hover {
+    background-color: #d3d000;
+}
+
+
+
+
+/* Home Butonu Stil */
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    background-color: #ffffffa7;
+}
+
+.home-button:hover {
+    background-color: rgba(55, 55, 55, 0.415);
+}
+
+/* İkonun boyutunu ayarlama */
+.home-icon {
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+}
