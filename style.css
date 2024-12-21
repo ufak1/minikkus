@@ -1,0 +1,128 @@
+/* Genel Stil */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('görsel/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Oyun alanının konteyneri */
+#game-container {
+    position: relative;
+    width: 90%; /* Ekran genişliğine göre %90 */
+    max-width: 320px; /* Maksimum genişlik 320px */
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(112, 197, 206, 0.8);
+    border: 5px solid rgba(27, 27, 27, 0.318);
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Canvas ayarları */
+canvas {
+    display: block;
+    width: 100%;  /* Canvas genişliği ekran boyutuna uyumlu */
+    height: 100%; /* Canvas yüksekliği ekran boyutuna uyumlu */
+}
+
+/* Yeniden Başla butonu */
+#restartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 10px 20px;
+    display: none;
+    border-radius: 15px;
+    background-color: rgb(251, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.584);
+    color: rgba(0, 0, 0, 0.763);
+    font-weight: bold;
+}
+
+/* Home Butonu Stil */
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    background-color: #ffffffa7;
+}
+
+/* Hover durumunda Home butonu */
+.home-button:hover {
+    background-color: rgba(55, 55, 55, 0.415);
+}
+
+/* İkonun boyutunu ayarlama */
+.home-icon {
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+}
+
+/* Responsive tasarım için Media Queries */
+
+/* Tablet ve küçük ekranlar için */
+@media (max-width: 768px) {
+    #game-container {
+        width: 90%;  /* Oyun alanını daha küçük ekranlara uyumlu hale getir */
+        max-width: 300px; /* Oyun alanının maksimum genişliği */
+        height: 450px;  /* Oyun alanı yüksekliği biraz daha küçük yapılabilir */
+    }
+
+    #restartButton {
+        font-size: 16px; /* Daha küçük yazı tipi */
+    }
+
+    .home-button {
+        padding: 8px;
+        top: 5px; /* Home butonunun konumunu yukarı kaydır */
+        left: 5px; /* Home butonunu sola kaydır */
+    }
+
+    .home-icon {
+        width: 25px;  /* İkonu küçült */
+        height: 25px; /* İkonu küçült */
+    }
+}
+
+/* Mobil ekranlar için */
+@media (max-width: 480px) {
+    #game-container {
+        width: 90%;  /* Oyun alanını daha küçük ekranlara uyumlu hale getir */
+        max-width: 280px; /* Oyun alanının maksimum genişliği */
+        height: 400px;  /* Oyun alanı yüksekliği küçültülebilir */
+    }
+
+    #restartButton {
+        font-size: 14px; /* Yazı tipini daha da küçült */
+        padding: 8px 16px; /* Buton boyutunu küçült */
+    }
+
+    .home-button {
+        padding: 6px;
+        top: 5px; /* Home butonunun konumunu yukarı kaydır */
+        left: 5px; /* Home butonunu sola kaydır */
+    }
+
+    .home-icon {
+        width: 20px;  /* İkonu daha da küçült */
+        height: 20px; /* İkonu daha da küçült */
+    }
+}

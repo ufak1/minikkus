@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minik Kus Game</title>
+    <link rel="icon" href="görsel/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <button id="restartButton" onclick="restartGame()">Yeniden Başla</button>
+    </div>
+
+    <audio id="gameMusic" src="görsel/Download.mp3" preload="auto"></audio>
+
+    <button id="homeButton" class="home-button">
+        <img src="görsel/home.png" class="home-icon" alt="Home">
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
